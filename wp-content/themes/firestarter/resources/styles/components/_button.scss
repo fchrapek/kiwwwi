@@ -1,0 +1,20 @@
+.button {
+  display: flex;
+  align-items: center;
+  max-width: max-content;
+  padding: 1.2rem 1.4rem;
+  color: var(--wp--preset--color--white);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: var(--wp--preset--color--primary);
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: opacity .25s ease-in-out;
+
+  &:hover {
+    text-decoration: none;
+    opacity: .8;
+  }
+}
