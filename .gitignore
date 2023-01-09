@@ -1,0 +1,45 @@
+### WordPress ###
+
+# Configuration
+wp-config.php
+wp-config-db.php
+
+# Example themes
+/wp-content/themes/brandpaka/move_out.sh
+/wp-content/themes/brandpaka/move_in.sh
+/wp-content/themes/brandpaka/theme_tests.sh
+/wp-content/themes/brandpaka/bower_components/
+/wp-content/themes/brandpaka/node_modules/
+/wp-content/themes/brandpaka/sass/navigation/luxbar
+/wp-content/themes/brandpaka/sass/navigation/_luxbar.scss
+/wp-content/themes/brandpaka/.DS_Store
+/wp-content/themes/brandpaka/package-lock.json
+/wp-content/themes/brandpaka/w3cErrors/
+/wp-content/themes/brandpaka/html
+/wp-content/themes/brandpaka/.vscode
+
+# Dist files
+/wp-content/themes/brandpaka/css
+/wp-content/themes/brandpaka/js/dev
+/wp-content/themes/brandpaka/js/prod
+
+# Example plugin
+/wp-content/mu-plugins
+/wp-content/plugins/wp-migrate-db-pro
+/wp-content/plugins/wp-migrate-db-pro-media-files
+/wp-content/plugins/wp-migrate-db-pro-theme-plugin-files
+
+# Uploads
+/wp-content/uploads/
+
+# Log files
+*.log
+
+# htaccess
+/.htaccess
+
+# others
+*-tmpchunk*
+.DS_Store
+.DS_Store?
+/.well-known
