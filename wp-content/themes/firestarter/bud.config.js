@@ -9,11 +9,11 @@ module.exports = async (app) => {
   /**
    * Blocks entrypoints
    */
-  const blocks = fs.readdirSync(app.path('@src/blocks')).filter(el => "." !== el.charAt(0));
-  blocks.forEach(name => {
+  const blocks = fs.readdirSync(app.path('@src/blocks')).filter((el) => '.' !== el.charAt(0));
+  blocks.forEach((name) => {
     app.entry(`block-${name}`, [
       app.path(`@src/blocks/${name}/styles`),
-      app.path(`@src/blocks/${name}/scripts`)
+      app.path(`@src/blocks/${name}/scripts`),
     ]);
   });
 
@@ -22,28 +22,28 @@ module.exports = async (app) => {
      * Application entrypoints
      */
     .entry({
-      admin: ["@scripts/admin", "@styles/admin"],
-      app: ["@scripts/app", "@styles/app"],
-      editor: ["@scripts/editor", "@styles/editor"],
+      admin: ['@scripts/admin', '@styles/admin'],
+      app: ['@scripts/app', '@styles/app'],
+      editor: ['@scripts/editor', '@styles/editor'],
     })
 
     /**
      * Directory contents to be included in the compilation
      */
-    .assets(["fonts", "images"])
+    .assets(['fonts', 'images'])
 
     /**
      * Matched files trigger a page reload when modified
      */
-    .watch(["resources/views/**/*", "app/**/*", "resources/blocks/**/*"])
+    .watch(['resources/views/**/*', 'app/**/*', 'resources/blocks/**/*'])
 
     /**
      * Proxy origin (`WP_HOME`)
      */
-    .proxy("http://firestarter.test")
+    .proxy('http://kiwwwi.test')
 
     /**
      * Development origin
      */
-    .serve("http://localhost:3000")
+    .serve('http://localhost:3000');
 };

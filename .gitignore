@@ -18,10 +18,8 @@ wp-config-db.php
 /wp-content/themes/brandpaka/html
 /wp-content/themes/brandpaka/.vscode
 
-# Dist files
-/wp-content/themes/brandpaka/css
-/wp-content/themes/brandpaka/js/dev
-/wp-content/themes/brandpaka/js/prod
+# Others 
+/wp-content/cache
 
 # Example plugin
 /wp-content/mu-plugins
